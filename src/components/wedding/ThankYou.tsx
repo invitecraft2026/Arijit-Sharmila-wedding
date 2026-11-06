@@ -39,8 +39,12 @@ export function ThankYou() {
 
         <Ornament className="mx-auto mt-10 h-6 w-56" />
 
-        <p className="mt-8 font-serif text-lg italic text-deep-brown/70">— Virat Kohli&amp;  Anushka Sharma</p>
-        <p className="mt-2 text-[10px] tracking-[0.5em] text-deep-brown/50 uppercase">Trichy · 07 September</p>
+        <p className="mt-8 font-serif text-lg italic text-deep-brown/70">
+          — Arijit Pradhan &amp; Sharmila Shyamal
+        </p>
+        <p className="mt-2 text-[10px] tracking-[0.5em] text-deep-brown/50 uppercase">
+          Bara Bankuya · 26 January
+        </p>
       </div>
     </section>
   );

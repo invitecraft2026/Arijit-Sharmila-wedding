@@ -27,6 +27,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0">
         <img
           src={heroimage}
+          alt="Arijit and Sharmila"
           className="h-full w-full object-cover"
           style={{ filter: "blur(6px)" }}
         />
@@ -73,16 +74,17 @@ export function Hero() {
           transition={{ duration: 1.8, delay: 0.6, ease: [0.19, 1, 0.22, 1] }}
           className="mt-6 font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
         >
-         Virat Kohli
+          Arijit Pradhan
         </motion.h1>
 
-        {/* <motion.p
+        {/* Parents' names (add when the client shares them)
+        <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1, duration: 0.9 }}
           className="mt-1 font-serif text-lg italic text-deep-brown/90 drop-shadow-md md:text-xl"
         >
-          S/O Mr. Durai Murugan &amp; Mrs. Kayalvizhi
+          S/O Mr. ______ &amp; Mrs. ______
         </motion.p> */}
 
         <motion.div
@@ -104,16 +106,17 @@ export function Hero() {
           transition={{ duration: 1.8, delay: 0.9, ease: [0.19, 1, 0.22, 1] }}
           className="font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
         >
-          Anushka Sharma
+          Sharmila Shyamal
         </motion.h1>
 
-        {/* <motion.p
+        {/* Parents' names (add when the client shares them)
+        <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.9 }}
           className="mt-1 font-serif text-lg italic text-deep-brown/90 drop-shadow-md md:text-xl"
         >
-          D/O Mr. Vijayakumar &amp; Mrs. Sujatha
+          D/O Mr. ______ &amp; Mrs. ______
         </motion.p> */}
 
         <Ornament className="mx-auto mt-8 h-8 w-64 opacity-80" />
@@ -124,7 +127,7 @@ export function Hero() {
           transition={{ delay: 1.8, duration: 1 }}
           className="mt-8 font-serif text-xl italic text-deep-brown drop-shadow-lg md:text-2xl"
         >
-          Two souls · One celebration · Wedding
+          Shubho Bibaho · Two souls · One celebration
         </motion.p>
       </motion.div>
 

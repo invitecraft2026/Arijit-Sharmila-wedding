@@ -63,27 +63,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
 
-      { title: "Virat Kohli & Anushka Sharma · A Wedding Invitation" },
+      { title: "Arijit Pradhan & Sharmila Shyamal · A Wedding Invitation" },
       {
         name: "description",
         content:
-          "Together with their families, Kowshik Raj & Niroopa Vijayakumar invite you to celebrate their  wedding on 6–7 September in Trichy.",
+          "Together with their families, Arijit Pradhan & Sharmila Shyamal invite you to celebrate their wedding on 25–26 January 2027 at Bara Bankuya, West Bengal.",
       },
 
       // Open Graph
       {
         property: "og:title",
-        content: "Virat Kohli & Anushka Sharma · A Wedding Invitation",
+        content: "Arijit Pradhan & Sharmila Shyamal · A Wedding Invitation",
       },
       {
         property: "og:description",
         content:
-          "Celebrate our Wedding — 6–7 September at Crystal Convention Centre, Trichy.",
+          "Celebrate our Wedding — 25–26 January at Das Market, Bara Bankuya, West Bengal.",
       },
-      {
-        property: "og:image",
-        content: "https://template1.invitecraft2026.workers.dev/image1.png",
-      },
+      
       {
         property: "og:image:width",
         content: "1200",
@@ -92,10 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         property: "og:image:height",
         content: "630",
       },
-      {
-        property: "og:url",
-        content: "https://template1.invitecraft2026.workers.dev/image1.png",
-      },
+      
       {
         property: "og:type",
         content: "website",
@@ -108,16 +102,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         name: "twitter:title",
-        content: "Virat Kohli & Anushka Sharma · A Wedding Invitation",
+        content: "Arijit Pradhan & Sharmila Shyamal · A Wedding Invitation",
       },
       {
         name: "twitter:description",
-        content: "Celebrate our Wedding — 6–7 September in Trichy.",
+        content: "Celebrate our Wedding — 25–26 January in Bara Bankuya, West Bengal.",
       },
-      {
-        name: "twitter:image",
-        content: "https://template1.invitecraft2026.workers.dev/image1.png",
-      },
+     
     ],
 
     links: [

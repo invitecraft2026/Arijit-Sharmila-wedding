@@ -1,34 +1,15 @@
 import { motion } from "framer-motion";
 import { MapPin, Navigation } from "lucide-react";
 import venue from "@/assets/venue.jpg";
-import coupleSecondary from "@/assets/image3.jpeg";
 import { SectionHeading } from "./SectionHeading";
 
 const VENUE_QUERY = encodeURIComponent(
-  "Crystal Convention Centre, SF No 108/2 and 108/3, Madurai Road, Kallikudi Village, South, Manikandam, Trichy - 620012",
+  "Das Market, NH116B, Balisai, Bara Bankuya, West Bengal 721423",
 );
 
 export function Venue() {
   return (
     <section className="relative overflow-hidden py-32 px-6">
-      {/* Soft couple photo backdrop */}
-      {/* Soft couple photo backdrop */}
-      <div className="pointer-events-none absolute inset-0">
-        <img
-          src={coupleSecondary}
-          alt=""
-          aria-hidden="true"
-          className="h-full w-full object-cover opacity-[0.32]"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--cream) 25%, transparent) 22%, color-mix(in oklab, var(--cream) 25%, transparent) 78%, var(--cream) 100%)",
-          }}
-        />
-      </div>
-
       <div className="relative z-10">
         <SectionHeading eyebrow="Where We Gather" title="The" italic="Venue" />
 
@@ -42,7 +23,7 @@ export function Venue() {
           <div className="relative min-h-[380px] overflow-hidden">
             <img
               src={venue}
-              alt="Crystal Convention Centre"
+              alt="Das Market"
               className="h-full w-full object-cover"
               loading="lazy"
             />
@@ -68,14 +49,13 @@ export function Venue() {
 
           <div className="glass flex flex-col justify-center gap-6 p-10 md:p-14">
             <p className="font-display text-[10px] tracking-[0.5em] text-rose-gold uppercase">
-              Reception & Ceremony
+              Haldi & Wedding Ceremony
             </p>
             <h3 className="font-serif text-4xl leading-tight text-deep-brown md:text-5xl">
-              Crystal <span className="italic text-gradient-gold">Convention Centre</span>
+              Das <span className="italic text-gradient-gold">Market</span>
             </h3>
             <p className="text-deep-brown/75 leading-relaxed">
-              SF No 108/2 and 108/3, Madurai Road, Kallikudi Village, South, Manikandam, Trichy –
-              620012.
+              NH116B, Balisai, Bara Bankuya, West Bengal – 721423.
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <a

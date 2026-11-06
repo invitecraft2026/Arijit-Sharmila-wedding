@@ -1,39 +1,30 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import coupleEvents from "@/assets/image2.png";
 
+const VENUE = "Das Market, NH116B, Balisai, Bara Bankuya, West Bengal 721423";
+
+// Dates assume 2027 (confirm year with client). Update times once the client shares them.
 const events = [
+  {
+    tag: "Gaye Holud",
+    title: "Haldi",
+    date: "Monday · 25 January 2027",
+    time: "Timing to be shared",
+    location: VENUE,
+  },
   {
     tag: "Wedding Ceremony",
     title: "Marriage",
-    date: "Monday · 7 September 2026",
-    time: "Mugurtham · 9:00 – 10:30 AM",
-    location: "Crystal Convention Centre, Trichy",
+    date: "Tuesday · 26 January 2027",
+    time: "Timing to be shared",
+    location: VENUE,
   },
 ];
 
 export function Events() {
   return (
     <section className="relative overflow-hidden py-32 px-6">
-      {/* Soft couple photo backdrop */}
-      {/* Soft couple photo backdrop */}
-      <div className="pointer-events-none absolute inset-0">
-        <img
-          src={coupleEvents}
-          alt=""
-          aria-hidden="true"
-          className="h-full w-full object-cover opacity-[0.32]"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--cream) 25%, transparent) 22%, color-mix(in oklab, var(--cream) 25%, transparent) 78%, var(--cream) 100%)",
-          }}
-        />
-      </div>
-
       <div className="relative z-10">
         <SectionHeading eyebrow="The Celebrations" title="Wedding" italic="Events" />
         <div className="mx-auto mt-20 grid max-w-5xl gap-8 md:grid-cols-2">

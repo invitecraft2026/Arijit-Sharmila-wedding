@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { SectionHeading } from "./SectionHeading";
-import coupleCountdown from "@/assets/image1.png";
 
-const TARGET = new Date("2026-09-07T09:00:00+05:30").getTime();
+// Wedding: 26 Jan 2027 (confirm year with client; 26 Jan 2026 has already passed)
+// Update the time once the client confirms the muhurat / ceremony start time.
+const TARGET = new Date("2027-01-26T09:00:00+05:30").getTime();
 
 function diff(now: number) {
   const d = Math.max(0, TARGET - now);
@@ -33,24 +34,6 @@ export function Countdown() {
 
   return (
     <section className="relative overflow-hidden py-28 md:py-48 px-6 bg-[var(--cream)]">
-      {/* Luxury Immersive Backdrop */}
-     {/* Soft couple photo backdrop */}
-<div className="pointer-events-none absolute inset-0">
-  <img
-    src={coupleCountdown}
-    alt=""
-    aria-hidden="true"
-    className="h-full w-full object-cover opacity-[0.32]"
-  />
-  <div
-    className="absolute inset-0"
-    style={{
-      background:
-        "linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--cream) 25%, transparent) 22%, color-mix(in oklab, var(--cream) 25%, transparent) 78%, var(--cream) 100%)",
-    }}
-  />
-</div>
-
       <div className="relative z-10 max-w-5xl mx-auto">
         <SectionHeading eyebrow="The Sacred Day Awaits" title="Counting the Moments" />
         

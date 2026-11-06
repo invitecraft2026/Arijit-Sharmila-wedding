@@ -2,7 +2,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Ornament } from "./Ornament";
-import coupleSecondary from "@/assets/image4.jpg";
 
 const HEART_PATH =
   "M130,225 C130,225 20,145 20,80 C20,45 45,18 80,18 C102,18 120,32 130,50 C140,32 158,18 180,18 C215,18 240,45 240,80 C240,145 130,225 130,225 Z";
@@ -143,24 +142,6 @@ export function ScratchReveal() {
 
   return (
     <section className="relative overflow-hidden py-24">
-      {/* Soft couple photo backdrop */}
-      <div className="pointer-events-none absolute inset-0">
-        <img
-          src={coupleSecondary}
-          alt=""
-          aria-hidden="true"
-          className="h-full w-full object-cover opacity-[0.32]"
-          style={{ objectPosition: "50% 10%" }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--cream) 25%, transparent) 22%, color-mix(in oklab, var(--cream) 25%, transparent) 78%, var(--cream) 100%)",
-          }}
-        />
-      </div>
-
       {/* Falling petals — triggered on reveal */}
       <AnimatePresence>
         {revealed && (
@@ -239,9 +220,9 @@ export function ScratchReveal() {
             animate={revealed ? { scale: [1, 1.04, 1] } : {}}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <span className="mt-2 font-serif text-3xl font-bold text-deep-brown">7</span>
+            <span className="mt-2 font-serif text-3xl font-bold text-deep-brown">26</span>
             <span className="font-serif text-xl italic font-bold text-deep-brown">
-              September 2026
+              January 2027
             </span>
           </motion.div>
 
