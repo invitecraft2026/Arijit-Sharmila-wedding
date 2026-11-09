@@ -20,6 +20,20 @@ const events = [
     time: "Timing to be shared",
     location: VENUE,
   },
+  {
+    tag: "Celebration",
+    title: "Reception",
+    date: "Wednesday · 27 January 2027",
+    time: "Timing to be shared",
+    location: VENUE,
+  },
+  {
+    tag: "Post-Wedding Ritual",
+    title: "Bouvat",
+    date: "Thursday · 28 January 2027",
+    time: "Timing to be shared",
+    location: VENUE,
+  },
 ];
 
 export function Events() {
@@ -34,7 +48,7 @@ export function Events() {
               initial={{ opacity: 0, y: 60, filter: "blur(14px)" }}
               whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 1.1, delay: i * 0.15, ease: [0.19, 1, 0.22, 1] }}
+              transition={{ duration: 1.1, delay: (i % 2) * 0.15, ease: [0.19, 1, 0.22, 1] }}
               whileHover={{ y: -6 }}
               className="glass gold-border relative overflow-hidden rounded-[2rem] p-10"
             >

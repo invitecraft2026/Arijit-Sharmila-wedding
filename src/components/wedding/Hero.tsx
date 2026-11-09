@@ -52,7 +52,7 @@ export function Hero() {
 
       <FloatingPetals count={24} />
 
-      <motion.div style={{ opacity }} className="relative z-10 px-6 text-center">
+      <motion.div style={{ opacity }} className="relative z-10 w-full px-4 text-center md:px-6">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, letterSpacing: "0.5em", filter: "blur(30px)" }}
           animate={{ opacity: 1, letterSpacing: "0.02em", filter: "blur(0px)" }}
           transition={{ duration: 1.8, delay: 0.6, ease: [0.19, 1, 0.22, 1] }}
-          className="mt-6 font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
+          className="mt-6 whitespace-nowrap font-script text-[clamp(1.75rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
         >
           Arijit Pradhan
         </motion.h1>
@@ -104,7 +104,7 @@ export function Hero() {
           initial={{ opacity: 0, letterSpacing: "0.5em", filter: "blur(30px)" }}
           animate={{ opacity: 1, letterSpacing: "0.02em", filter: "blur(0px)" }}
           transition={{ duration: 1.8, delay: 0.9, ease: [0.19, 1, 0.22, 1] }}
-          className="font-script text-[clamp(3rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
+          className="whitespace-nowrap font-script text-[clamp(1.75rem,9vw,6.5rem)] leading-[0.9] text-deep-brown"
         >
           Sharmila Shyamal
         </motion.h1>
